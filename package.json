@@ -1,0 +1,20 @@
+{
+  "name": "calialert",
+  "version": "1.0.0",
+  "description": "Provides warnings to those who could be affected by a natural disaster.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvinwang922/CaliAlert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvinwang922/CaliAlert/issues"
+  },
+  "homepage": "https://github.com/alvinwang922/CaliAlert#readme"
+}

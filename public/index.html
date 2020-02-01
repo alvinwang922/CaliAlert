@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Home Page </title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a href="/getData"> View All Numbers </a>
+        <h1> CaliAlert </h1>
+        <form action="/insertData" method="POST">
+            <p>Add Phone Number</p>
+            <input type="text" name="flavor"/>
+            <input type="submit" value="insert"/>
+        </form>
+
+        <form action="/count" method="GET">
+            <p>Check for repeat numbers</p>
+            <input type="text" name="flavor" />
+            <input type="submit" value="search" />
+        </form>
+
+    </body>
+</html>
