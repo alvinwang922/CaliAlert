@@ -2,23 +2,73 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> Home Page </title>
+        <link rel="icon" href="fire.jpg">
+        <title> CaliAlert </title>
         <link type="text/css" rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Volkhov&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        <a href="/getData"> View All Numbers </a>
-        <h1> CaliAlert </h1>
-        <form action="/insertData" method="POST">
-            <p>Add Phone Number</p>
-            <input type="text" name="flavor"/>
-            <input type="submit" value="insert"/>
-        </form>
+      <header>
+            <img src=fire2.jpg alt="fire2" class="fire-pic">
 
-        <form action="/count" method="GET">
-            <p>Check for repeat numbers</p>
-            <input type="text" name="flavor" />
-            <input type="submit" value="search" />
-        </form>
+            <nav>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#learnmore">Learn More</a></li>
+                  <li><a href="#subscribe">Subscribe</a></li>
+                </ul>
+            </nav>
+      </header>
 
+      <section id="home">
+                <div class="section-inner">
+                    <h1>CaliAlert</h1>
+                    <br>
+                    <br>
+                    <img src=disaster.jpg alt="disaster" class="center-fit">
+                    <br>
+                    <br>
+                    <h2>Provides warnings to those who could be affected by a natural disaster.</h2>
+                </div>
+            </section>
+
+            <section id="learnmore">
+              <div class="section-inner">
+                <h5>In November 2018, California had a huge fire that took the lives of 86 people in addition to $16.5 billion of structures. In 2019, California had 6,872 fire incidents. In addition to the many floods that have also occurred, California is scheduled to have a huge earthquake coming up. Structures can be replaced but human lives can not. That is why we have created this software. Subscribe today to get warnings of natural disasters in California occurring near you and tips on how to stay safe!</h5>
+                <br>
+                <br>
+                <h5>Click <a href="https://projects.sfchronicle.com/2019/california-danger-zones/" target="_blank">here</a> to see if your area is at risk of a natural disaster!</h5>
+              </div>
+            </section>
+
+            <section id="subscribe">
+                      <div class="section-inner">
+                          <h3>Subscribe today to keep you and your family safe!</h3>
+                          <br>
+                          <br>
+                          <img src=safe.png alt="safe" class="center-fit">
+                          <br>
+                          <br>
+                          <h4 id="phoneNumber">Phone Number:</h4>
+                          <input type="phoneNumber" id="number" style="height:28px;font-size:14pt;"/>
+                          <br>
+                          <br>
+                          <h4 id="zipCode">Zip Code:</h4>
+                          <input type="zipCode" id="zip" style="height:28px;font-size:11pt;"/>
+                          <br>
+                          <br>
+                          <button style="font-size:1.5em; width:90px; height:30px;" id="saveButton">Enter</button>
+                                <script src="/__/firebase/7.8.0/firebase-app.js"></script>
+                                <script src="/__/firebase/7.8.0/firebase-auth.js"></script>
+                                <script src="/__/firebase/7.8.0/firebase-firestore.js"></script>
+                                <script src="/__/firebase/init.js"></script>
+                                <script src="/main.js" type="text/javascript"></script>
+                      </div>
+                  </section>
+
+                  <footer>
+                    Brought to life on February 2nd, 2020 by three college students who care for your safety!
+                  </footer>
     </body>
 </html>
