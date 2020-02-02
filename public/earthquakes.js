@@ -53,7 +53,8 @@ items.forEach(element =>
     {
       "title": element["title"],
       "coords": element["coords"],
-      "mag": element["mag"]
+      "mag": element["mag"],
+      "county": element["county"]
     })
 );
 
