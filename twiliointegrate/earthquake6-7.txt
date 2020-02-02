@@ -1,0 +1,6 @@
+ALERT: EARTHQUAKE
+Magnitude: 6.7
+DROP, COVER, AND HOLD ON
+Hide beneath a table or cover your head with your arms
+
+https://www.ready.gov/earthquakes

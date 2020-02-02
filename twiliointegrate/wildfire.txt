@@ -1,0 +1,4 @@
+ALERT: FIRE
+Wildfire reported nearby. Be ready to evacuate.
+For up to date info:
+https://www.fire.ca.gov/incidents/

@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "git.ignoreLimitWarning": true
+=======
+    "python.pythonPath": "C:\\Users\\celia\\Anaconda3\\python.exe"
+>>>>>>> fbd62468a0e722f94e81732dc2932c1aebc46c6f
 }
