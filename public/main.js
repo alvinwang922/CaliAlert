@@ -26,15 +26,16 @@ function getData (e) {
     console.log(x);
   }
 });*/
-const inputTextField = document.querySelector("#number");
+const inputPhoneNumber = document.querySelector("#number");
+const inputZipCode = document.querySelector("#zip");
 const saveButton = document.querySelector("#saveButton");
 
 saveButton.addEventListener("click", function() {
-  console.log("lol");
     const docRef = db.collection("users").doc();
-    const number = inputTextField.value;
+    const number = inputPhoneNumber.value;
+    const zip = inputZipCode.value;
     docRef.set({
-        phoneNumber: number
+        phoneNumber: number, zip
     }).then(function() {
         console.log("Number added!");
     }).catch(function (error){
