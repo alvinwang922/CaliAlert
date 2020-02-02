@@ -1,0 +1,6 @@
+{
+  "wildfire": "ALERT: FIRE \nWildfire reported nearby. Be ready to evacuate.\n For up to date info:\n https://www.fire.ca.gov/incidents/",
+  "earthquake14": "ALERT: EARTHQUAKE\nMagnitude: 4.1\nDROP, COVER, AND HOLD ON\nHide beneath a table or cover your head with your arms\nhttps://www.ready.gov/earthquakes",
+  "earthquake67": "ALERT: EARTHQUAKE\nMagnitude: 6.7\nDROP, COVER, AND HOLD ON\nHide beneath a table or cover your head with your arms\nhttps://www.ready.gov/earthquakes",
+  "flood": "ALERT: FLOODING\nFlooding reported in your area. Be cautious when traveling.\nNEVER drive through a flooded road. Stay home if possible."
+}

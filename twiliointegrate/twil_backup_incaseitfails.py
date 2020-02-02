@@ -108,34 +108,34 @@ class Twilio():
 if __name__ == '__main__':
     t = Twilio()
     w = naturaldisasterparse.get_result('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2020-02-01&maxlatitude=42.010122&minlatitude=32.467133&maxlongitude=-113.881617&minlongitude=-124.718872&minmagnitude=2')    
+    # while True:
+    #     x = t.search_bool(u'users','admin','')
+    #     if x == 'admin':
+    #         print('admin')
     while True:
-        x = t.search_bool(u'users','admin','')
-        if x == 'admin':
-            print('admin')
-            while True:
-                if t.search_bool(u'users','','earthquake14'):
-                    t.sms_func(t.numbers_to_call('all'), disaster_dict['earthquake14'])
-                    break
-                elif t.search_bool(u'users','','wildfire'):
-                    t.sms_func(t.numbers_to_call('all'), disaster_dict['wildfire'])
-                    break
-                elif t.search_bool(u'users','','earthquake67'):
-                    t.sms_func(t.numbers_to_call('all'), disaster_dict['earthquake67'])
-                    break
-                elif t.search_bool(u'users','','flood'):
-                    print('flood')
-                    t.sms_func(t.numbers_to_call('all'), disaster_dict['flood'])
-                    break
-                elif t.search_bool(u'users','','coronavirus'):
-                    t.sms_func(t.numbers_to_call('all'), disaster_dict['coronavirus'])
-                    break
-        elif x:
-            print('x')
-            while True:
-                if t.search_bool(u'users','','earthquake14'):
-                    t.sms_func(t.numbers_to_call(x), disaster_dict['earthquake14'])
-                    print('earthquakeyayy')
-                    break
-        elif x == 'quit':
-            print('quit')
+        if t.search_bool(u'users','','earthquake14'):
+            t.sms_func(t.numbers_to_call('all'), disaster_dict['earthquake14'])
             break
+        elif t.search_bool(u'users','','wildfire'):
+            t.sms_func(t.numbers_to_call('all'), disaster_dict['wildfire'])
+            break
+        elif t.search_bool(u'users','','earthquake67'):
+            t.sms_func(t.numbers_to_call('all'), disaster_dict['earthquake67'])
+            break
+        elif t.search_bool(u'users','','flood'):
+            print('flood')
+            t.sms_func(t.numbers_to_call('all'), disaster_dict['flood'])
+            break
+        elif t.search_bool(u'users','','coronavirus'):
+            t.sms_func(t.numbers_to_call('all'), disaster_dict['coronavirus'])
+            break
+        # elif x:
+        #     print('x')
+        #     while True:
+        #         if t.search_bool(u'users','','earthquake14'):
+        #             t.sms_func(t.numbers_to_call(x), disaster_dict['earthquake14'])
+        #             print('earthquakeyayy')
+        #             break
+        # elif x == 'quit':
+        #     print('quit')
+        #     break
